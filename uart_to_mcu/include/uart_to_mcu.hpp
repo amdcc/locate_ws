@@ -15,7 +15,7 @@ inline constexpr uint8_t kWheelPacketId = 0x01;
 inline constexpr uint16_t kFrameTail = 0x55AA;
 inline constexpr uint32_t kWheelPayloadLength = 8U;  // left(int32) + right(int32)
 inline constexpr const char * kDefaultWheelSpeedsTopic = "/wheel_speeds";
-inline constexpr const char * kDefaultSerialPort = "/dev/ttyUSB0";
+inline constexpr const char * kDefaultSerialPort = "/dev/ttyS1";
 
 class UartToMcuNode : public rclcpp::Node
 {

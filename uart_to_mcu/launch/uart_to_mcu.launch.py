@@ -7,7 +7,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
 	serial_port_arg = DeclareLaunchArgument(
 		"serial_port",
-		default_value="/dev/ttyUSB0",
+		default_value="/dev/ttyS1",
 		description="Serial device for sending wheel speed packets",
 	)
 
