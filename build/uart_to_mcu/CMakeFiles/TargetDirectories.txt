@@ -1,0 +1,10 @@
+/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu/CMakeFiles/uninstall.dir
+/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu/CMakeFiles/uart_to_mcu_uninstall.dir
+/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu/CMakeFiles/uart_to_mcu_node.dir
+/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu/CMakeFiles/test.dir
+/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu/CMakeFiles/edit_cache.dir
+/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu/CMakeFiles/rebuild_cache.dir
+/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu/CMakeFiles/list_install_components.dir
+/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu/CMakeFiles/install.dir
+/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu/CMakeFiles/install/local.dir
+/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu/CMakeFiles/install/strip.dir

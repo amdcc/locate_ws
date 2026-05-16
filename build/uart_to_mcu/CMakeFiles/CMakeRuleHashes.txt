@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+55d704ff0e5685bb5fcd29fb153af798 CMakeFiles/uart_to_mcu_uninstall

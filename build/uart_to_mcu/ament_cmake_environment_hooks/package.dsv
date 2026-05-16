@@ -1,0 +1,4 @@
+source;share/uart_to_mcu/local_setup.bash
+source;share/uart_to_mcu/local_setup.dsv
+source;share/uart_to_mcu/local_setup.sh
+source;share/uart_to_mcu/local_setup.zsh

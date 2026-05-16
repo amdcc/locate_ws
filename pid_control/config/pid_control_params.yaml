@@ -1,0 +1,28 @@
+waypoint_manager:
+  ros__parameters:
+    waypoint_frame: "map"
+    reach_tolerance: 0.25
+    loop_waypoints: true
+    publish_rate_hz: 10.0
+    # Fixed waypoints: [x1, y1, yaw1, x2, y2, yaw2, ...]
+    waypoint_list: [0.0, 0.0, 0.0, 1.5, 0.0, 0.0, 2.0, 1.0, 1.57, 1.0, 2.0, 3.14, 0.0, 1.0, -1.57]
+
+pose_processor:
+  ros__parameters: {}
+
+diff_drive_controller:
+  ros__parameters:
+    kp_linear: 0.8
+    ki_linear: 0.0
+    kd_linear: 0.1
+    kp_angular: 1.6
+    ki_angular: 0.0
+    kd_angular: 0.15
+    cross_track_gain: 1.0
+    max_linear_vel: 0.7
+    max_angular_vel: 1.5
+    control_rate_hz: 30.0
+    wheel_base: 0.38
+    wheel_radius: 0.075
+    publish_wheel_speeds: true
+    wheel_speeds_topic: "/wheel_speeds"

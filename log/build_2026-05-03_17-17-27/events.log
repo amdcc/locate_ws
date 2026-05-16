@@ -1,0 +1,1293 @@
+[0.000000] (-) TimerEvent: {}
+[0.002285] (carto_description) JobQueued: {'identifier': 'carto_description', 'dependencies': OrderedDict()}
+[0.003138] (pid_control) JobQueued: {'identifier': 'pid_control', 'dependencies': OrderedDict()}
+[0.004157] (uart_to_mcu) JobQueued: {'identifier': 'uart_to_mcu', 'dependencies': OrderedDict()}
+[0.004405] (my_launch) JobQueued: {'identifier': 'my_launch', 'dependencies': OrderedDict([('pid_control', '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/pid_control'), ('uart_to_mcu', '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu')])}
+[0.004631] (pid_control) JobStarted: {'identifier': 'pid_control'}
+[0.046499] (uart_to_mcu) JobStarted: {'identifier': 'uart_to_mcu'}
+[0.068767] (carto_description) JobStarted: {'identifier': 'carto_description'}
+[0.097631] (pid_control) JobProgress: {'identifier': 'pid_control', 'progress': 'cmake'}
+[0.098701] (-) TimerEvent: {}
+[0.100432] (pid_control) Command: {'cmd': ['/usr/bin/cmake', '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/pid_control', '-DCMAKE_INSTALL_PREFIX=/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/pid_control'], 'cwd': '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/pid_control', 'env': OrderedDict([('USER', 'sunrise'), ('SSH_CLIENT', '10.249.66.214 56807 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sunrise/bluesea2_ws/install/base/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/sunrise'), ('OLDPWD', '/home/sunrise/lidar_locate_ws/lidar_locate_ws'), ('SSH_TTY', '/dev/pts/5'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/sunrise/cartographer_ws/install:/home/sunrise/bluesea2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunrise'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '8'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:13.0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/sunrise/cartographer_ws/install/my_cartographer_config:/home/sunrise/bluesea2_ws/install/bluesea2:/home/sunrise/bluesea2_ws/install/base:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/pid_control'), ('SSH_CONNECTION', '10.249.66.214 56807 10.249.83.222 22'), ('PYTHONPATH', '/home/sunrise/bluesea2_ws/install/base/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/sunrise/cartographer_ws/install/my_cartographer_config:/home/sunrise/bluesea2_ws/install/bluesea2:/home/sunrise/bluesea2_ws/install/base:/opt/ros/humble')]), 'shell': False}
+[0.112483] (uart_to_mcu) JobProgress: {'identifier': 'uart_to_mcu', 'progress': 'cmake'}
+[0.114649] (uart_to_mcu) Command: {'cmd': ['/usr/bin/cmake', '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/uart_to_mcu', '-DCMAKE_INSTALL_PREFIX=/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu'], 'cwd': '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu', 'env': OrderedDict([('USER', 'sunrise'), ('SSH_CLIENT', '10.249.66.214 56807 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sunrise/bluesea2_ws/install/base/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/sunrise'), ('OLDPWD', '/home/sunrise/lidar_locate_ws/lidar_locate_ws'), ('SSH_TTY', '/dev/pts/5'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/sunrise/cartographer_ws/install:/home/sunrise/bluesea2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunrise'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '8'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:13.0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/sunrise/cartographer_ws/install/my_cartographer_config:/home/sunrise/bluesea2_ws/install/bluesea2:/home/sunrise/bluesea2_ws/install/base:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu'), ('SSH_CONNECTION', '10.249.66.214 56807 10.249.83.222 22'), ('PYTHONPATH', '/home/sunrise/bluesea2_ws/install/base/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/sunrise/cartographer_ws/install/my_cartographer_config:/home/sunrise/bluesea2_ws/install/bluesea2:/home/sunrise/bluesea2_ws/install/base:/opt/ros/humble')]), 'shell': False}
+[0.127953] (carto_description) JobProgress: {'identifier': 'carto_description', 'progress': 'cmake'}
+[0.131546] (carto_description) Command: {'cmd': ['/usr/bin/cmake', '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/carto_description', '-DCMAKE_INSTALL_PREFIX=/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/carto_description'], 'cwd': '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/carto_description', 'env': OrderedDict([('USER', 'sunrise'), ('SSH_CLIENT', '10.249.66.214 56807 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sunrise/bluesea2_ws/install/base/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/sunrise'), ('OLDPWD', '/home/sunrise/lidar_locate_ws/lidar_locate_ws'), ('SSH_TTY', '/dev/pts/5'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/sunrise/cartographer_ws/install:/home/sunrise/bluesea2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunrise'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '8'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:13.0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/sunrise/cartographer_ws/install/my_cartographer_config:/home/sunrise/bluesea2_ws/install/bluesea2:/home/sunrise/bluesea2_ws/install/base:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/carto_description'), ('SSH_CONNECTION', '10.249.66.214 56807 10.249.83.222 22'), ('PYTHONPATH', '/home/sunrise/bluesea2_ws/install/base/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/sunrise/cartographer_ws/install/my_cartographer_config:/home/sunrise/bluesea2_ws/install/bluesea2:/home/sunrise/bluesea2_ws/install/base:/opt/ros/humble')]), 'shell': False}
+[0.198918] (-) TimerEvent: {}
+[0.299882] (-) TimerEvent: {}
+[0.400853] (-) TimerEvent: {}
+[0.501922] (-) TimerEvent: {}
+[0.602956] (-) TimerEvent: {}
+[0.703950] (-) TimerEvent: {}
+[0.727634] (uart_to_mcu) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.2.0\n'}
+[0.728609] (pid_control) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.2.0\n'}
+[0.729317] (carto_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.2.0\n'}
+[0.804162] (-) TimerEvent: {}
+[0.905073] (-) TimerEvent: {}
+[1.005938] (-) TimerEvent: {}
+[1.106872] (-) TimerEvent: {}
+[1.207922] (-) TimerEvent: {}
+[1.308968] (-) TimerEvent: {}
+[1.315257] (uart_to_mcu) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.2.0\n'}
+[1.316161] (carto_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.2.0\n'}
+[1.319218] (pid_control) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.2.0\n'}
+[1.358966] (pid_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.360111] (carto_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.360879] (uart_to_mcu) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.409181] (-) TimerEvent: {}
+[1.510146] (-) TimerEvent: {}
+[1.611083] (-) TimerEvent: {}
+[1.712268] (-) TimerEvent: {}
+[1.749987] (carto_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.750827] (pid_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.762294] (uart_to_mcu) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.797394] (pid_control) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.798270] (carto_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.799292] (pid_control) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.800039] (carto_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.802768] (carto_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.803489] (pid_control) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.809357] (uart_to_mcu) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.810550] (uart_to_mcu) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.812388] (-) TimerEvent: {}
+[1.813115] (uart_to_mcu) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.821084] (carto_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.821893] (pid_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.828657] (uart_to_mcu) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.912628] (-) TimerEvent: {}
+[2.013605] (-) TimerEvent: {}
+[2.114636] (-) TimerEvent: {}
+[2.215828] (-) TimerEvent: {}
+[2.255006] (pid_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.265738] (uart_to_mcu) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.271391] (carto_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.303750] (pid_control) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.304951] (pid_control) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.307464] (pid_control) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.315079] (uart_to_mcu) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.315917] (-) TimerEvent: {}
+[2.316951] (uart_to_mcu) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.319199] (uart_to_mcu) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.320505] (carto_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.321768] (carto_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.324243] (carto_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.334262] (uart_to_mcu) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.335208] (pid_control) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.335905] (carto_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.416159] (-) TimerEvent: {}
+[2.517191] (-) TimerEvent: {}
+[2.618190] (-) TimerEvent: {}
+[2.719296] (-) TimerEvent: {}
+[2.820562] (-) TimerEvent: {}
+[2.921635] (-) TimerEvent: {}
+[3.022879] (-) TimerEvent: {}
+[3.123856] (-) TimerEvent: {}
+[3.224848] (-) TimerEvent: {}
+[3.325780] (-) TimerEvent: {}
+[3.426880] (-) TimerEvent: {}
+[3.527851] (-) TimerEvent: {}
+[3.628750] (-) TimerEvent: {}
+[3.729694] (-) TimerEvent: {}
+[3.830663] (-) TimerEvent: {}
+[3.931841] (-) TimerEvent: {}
+[4.033124] (-) TimerEvent: {}
+[4.134063] (-) TimerEvent: {}
+[4.235020] (-) TimerEvent: {}
+[4.335974] (-) TimerEvent: {}
+[4.437086] (-) TimerEvent: {}
+[4.538141] (-) TimerEvent: {}
+[4.639106] (-) TimerEvent: {}
+[4.740084] (-) TimerEvent: {}
+[4.841162] (-) TimerEvent: {}
+[4.923956] (uart_to_mcu) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[4.932318] (pid_control) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[4.941351] (-) TimerEvent: {}
+[5.046828] (-) TimerEvent: {}
+[5.148165] (-) TimerEvent: {}
+[5.154813] (carto_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[5.248379] (-) TimerEvent: {}
+[5.349362] (-) TimerEvent: {}
+[5.450446] (-) TimerEvent: {}
+[5.551973] (-) TimerEvent: {}
+[5.618395] (uart_to_mcu) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[5.619273] (pid_control) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[5.652196] (-) TimerEvent: {}
+[5.745655] (carto_description) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[5.752405] (-) TimerEvent: {}
+[5.853368] (-) TimerEvent: {}
+[5.871404] (uart_to_mcu) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[5.872365] (pid_control) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[5.902481] (uart_to_mcu) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.903404] (pid_control) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.947332] (carto_description) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[5.953566] (-) TimerEvent: {}
+[5.957851] (pid_control) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[5.958611] (uart_to_mcu) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[5.973304] (carto_description) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[6.018685] (carto_description) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[6.044133] (uart_to_mcu) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.044934] (pid_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.053766] (-) TimerEvent: {}
+[6.088915] (carto_description) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.152379] (pid_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.153208] (uart_to_mcu) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.153785] (-) TimerEvent: {}
+[6.182741] (carto_description) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.254022] (-) TimerEvent: {}
+[6.354951] (-) TimerEvent: {}
+[6.441711] (pid_control) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[6.442549] (uart_to_mcu) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[6.443207] (carto_description) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[6.455134] (-) TimerEvent: {}
+[6.458883] (carto_description) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[6.460196] (uart_to_mcu) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[6.461093] (pid_control) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[6.555341] (-) TimerEvent: {}
+[6.656264] (-) TimerEvent: {}
+[6.757309] (-) TimerEvent: {}
+[6.858281] (-) TimerEvent: {}
+[6.906021] (carto_description) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[6.907710] (pid_control) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[6.908510] (uart_to_mcu) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[6.958491] (-) TimerEvent: {}
+[7.038579] (uart_to_mcu) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[7.039494] (carto_description) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[7.040117] (pid_control) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[7.058685] (-) TimerEvent: {}
+[7.159602] (-) TimerEvent: {}
+[7.225099] (carto_description) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[7.226014] (uart_to_mcu) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[7.249085] (pid_control) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[7.259799] (-) TimerEvent: {}
+[7.277256] (uart_to_mcu) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[7.279203] (carto_description) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[7.295733] (pid_control) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[7.360027] (-) TimerEvent: {}
+[7.461073] (-) TimerEvent: {}
+[7.562108] (-) TimerEvent: {}
+[7.663107] (-) TimerEvent: {}
+[7.700884] (carto_description) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[7.718057] (pid_control) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[7.718708] (carto_description) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[7.719295] (uart_to_mcu) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[7.719866] (pid_control) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[7.720402] (uart_to_mcu) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[7.763324] (-) TimerEvent: {}
+[7.864325] (-) TimerEvent: {}
+[7.965403] (-) TimerEvent: {}
+[8.066434] (-) TimerEvent: {}
+[8.090643] (uart_to_mcu) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[8.094744] (pid_control) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[8.095967] (uart_to_mcu) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[8.098247] (carto_description) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[8.099871] (pid_control) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[8.103271] (carto_description) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[8.166647] (-) TimerEvent: {}
+[8.267682] (-) TimerEvent: {}
+[8.368648] (-) TimerEvent: {}
+[8.458615] (carto_description) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[8.459599] (pid_control) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[8.463657] (uart_to_mcu) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[8.468811] (-) TimerEvent: {}
+[8.570294] (-) TimerEvent: {}
+[8.574056] (pid_control) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[8.670520] (-) TimerEvent: {}
+[8.771459] (-) TimerEvent: {}
+[8.872520] (-) TimerEvent: {}
+[8.973598] (-) TimerEvent: {}
+[9.011295] (uart_to_mcu) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[9.012383] (uart_to_mcu) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/uart_to_mcu/include>\n'}
+[9.013106] (uart_to_mcu) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[9.016242] (uart_to_mcu) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[9.020368] (uart_to_mcu) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[9.024167] (uart_to_mcu) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[9.029698] (uart_to_mcu) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[9.030595] (uart_to_mcu) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[9.033167] (uart_to_mcu) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[9.036144] (carto_description) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[9.040339] (carto_description) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[9.041412] (uart_to_mcu) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.046295] (carto_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.066707] (carto_description) StdoutLine: {'line': b'-- Generating done\n'}
+[9.073803] (-) TimerEvent: {}
+[9.079724] (carto_description) StdoutLine: {'line': b'-- Build files have been written to: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/carto_description\n'}
+[9.087495] (uart_to_mcu) StdoutLine: {'line': b'-- Generating done\n'}
+[9.108718] (pid_control) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[9.109775] (uart_to_mcu) StdoutLine: {'line': b'-- Build files have been written to: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu\n'}
+[9.110449] (pid_control) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/pid_control/include>\n'}
+[9.111021] (pid_control) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[9.113001] (pid_control) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[9.116186] (pid_control) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[9.119381] (pid_control) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[9.124771] (pid_control) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[9.125800] (pid_control) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[9.128411] (pid_control) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[9.135291] (pid_control) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.152299] (carto_description) CommandEnded: {'returncode': 0}
+[9.155241] (carto_description) JobProgress: {'identifier': 'carto_description', 'progress': 'build'}
+[9.160156] (carto_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/carto_description', '--', '-j8', '-l8'], 'cwd': '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/carto_description', 'env': OrderedDict([('USER', 'sunrise'), ('SSH_CLIENT', '10.249.66.214 56807 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sunrise/bluesea2_ws/install/base/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/sunrise'), ('OLDPWD', '/home/sunrise/lidar_locate_ws/lidar_locate_ws'), ('SSH_TTY', '/dev/pts/5'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/sunrise/cartographer_ws/install:/home/sunrise/bluesea2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunrise'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '8'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:13.0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/sunrise/cartographer_ws/install/my_cartographer_config:/home/sunrise/bluesea2_ws/install/bluesea2:/home/sunrise/bluesea2_ws/install/base:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/carto_description'), ('SSH_CONNECTION', '10.249.66.214 56807 10.249.83.222 22'), ('PYTHONPATH', '/home/sunrise/bluesea2_ws/install/base/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/sunrise/cartographer_ws/install/my_cartographer_config:/home/sunrise/bluesea2_ws/install/bluesea2:/home/sunrise/bluesea2_ws/install/base:/opt/ros/humble')]), 'shell': False}
+[9.174015] (-) TimerEvent: {}
+[9.185196] (uart_to_mcu) CommandEnded: {'returncode': 0}
+[9.188294] (uart_to_mcu) JobProgress: {'identifier': 'uart_to_mcu', 'progress': 'build'}
+[9.188594] (pid_control) StdoutLine: {'line': b'-- Generating done\n'}
+[9.191385] (uart_to_mcu) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu', '--', '-j8', '-l8'], 'cwd': '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu', 'env': OrderedDict([('USER', 'sunrise'), ('SSH_CLIENT', '10.249.66.214 56807 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sunrise/bluesea2_ws/install/base/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/sunrise'), ('OLDPWD', '/home/sunrise/lidar_locate_ws/lidar_locate_ws'), ('SSH_TTY', '/dev/pts/5'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/sunrise/cartographer_ws/install:/home/sunrise/bluesea2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunrise'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '8'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:13.0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/sunrise/cartographer_ws/install/my_cartographer_config:/home/sunrise/bluesea2_ws/install/bluesea2:/home/sunrise/bluesea2_ws/install/base:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu'), ('SSH_CONNECTION', '10.249.66.214 56807 10.249.83.222 22'), ('PYTHONPATH', '/home/sunrise/bluesea2_ws/install/base/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/sunrise/cartographer_ws/install/my_cartographer_config:/home/sunrise/bluesea2_ws/install/bluesea2:/home/sunrise/bluesea2_ws/install/base:/opt/ros/humble')]), 'shell': False}
+[9.210066] (pid_control) StdoutLine: {'line': b'-- Build files have been written to: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/pid_control\n'}
+[9.274232] (-) TimerEvent: {}
+[9.279979] (pid_control) CommandEnded: {'returncode': 0}
+[9.282813] (pid_control) JobProgress: {'identifier': 'pid_control', 'progress': 'build'}
+[9.284506] (pid_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/pid_control', '--', '-j8', '-l8'], 'cwd': '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/pid_control', 'env': OrderedDict([('USER', 'sunrise'), ('SSH_CLIENT', '10.249.66.214 56807 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sunrise/bluesea2_ws/install/base/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/sunrise'), ('OLDPWD', '/home/sunrise/lidar_locate_ws/lidar_locate_ws'), ('SSH_TTY', '/dev/pts/5'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/sunrise/cartographer_ws/install:/home/sunrise/bluesea2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunrise'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '8'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:13.0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/sunrise/cartographer_ws/install/my_cartographer_config:/home/sunrise/bluesea2_ws/install/bluesea2:/home/sunrise/bluesea2_ws/install/base:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/pid_control'), ('SSH_CONNECTION', '10.249.66.214 56807 10.249.83.222 22'), ('PYTHONPATH', '/home/sunrise/bluesea2_ws/install/base/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/sunrise/cartographer_ws/install/my_cartographer_config:/home/sunrise/bluesea2_ws/install/bluesea2:/home/sunrise/bluesea2_ws/install/base:/opt/ros/humble')]), 'shell': False}
+[9.356093] (carto_description) CommandEnded: {'returncode': 0}
+[9.359430] (carto_description) JobProgress: {'identifier': 'carto_description', 'progress': 'install'}
+[9.374440] (-) TimerEvent: {}
+[9.401619] (carto_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/carto_description'], 'cwd': '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/carto_description', 'env': OrderedDict([('USER', 'sunrise'), ('SSH_CLIENT', '10.249.66.214 56807 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sunrise/bluesea2_ws/install/base/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/sunrise'), ('OLDPWD', '/home/sunrise/lidar_locate_ws/lidar_locate_ws'), ('SSH_TTY', '/dev/pts/5'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/sunrise/cartographer_ws/install:/home/sunrise/bluesea2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunrise'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '8'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:13.0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/sunrise/cartographer_ws/install/my_cartographer_config:/home/sunrise/bluesea2_ws/install/bluesea2:/home/sunrise/bluesea2_ws/install/base:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/carto_description'), ('SSH_CONNECTION', '10.249.66.214 56807 10.249.83.222 22'), ('PYTHONPATH', '/home/sunrise/bluesea2_ws/install/base/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/sunrise/cartographer_ws/install/my_cartographer_config:/home/sunrise/bluesea2_ws/install/bluesea2:/home/sunrise/bluesea2_ws/install/base:/opt/ros/humble')]), 'shell': False}
+[9.414058] (uart_to_mcu) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/uart_to_mcu_node.dir/src/uart_to_mcu.cpp.o\x1b[0m\n'}
+[9.439980] (carto_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.441035] (carto_description) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/carto_description/share/ament_index/resource_index/package_run_dependencies/carto_description\n'}
+[9.441968] (carto_description) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/carto_description/share/ament_index/resource_index/parent_prefix_path/carto_description\n'}
+[9.443047] (carto_description) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/carto_description/share/carto_description/environment/ament_prefix_path.sh\n'}
+[9.443793] (carto_description) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/carto_description/share/carto_description/environment/ament_prefix_path.dsv\n'}
+[9.444480] (carto_description) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/carto_description/share/carto_description/environment/path.sh\n'}
+[9.445244] (carto_description) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/carto_description/share/carto_description/environment/path.dsv\n'}
+[9.445993] (carto_description) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/carto_description/share/carto_description/local_setup.bash\n'}
+[9.446740] (carto_description) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/carto_description/share/carto_description/local_setup.sh\n'}
+[9.447714] (carto_description) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/carto_description/share/carto_description/local_setup.zsh\n'}
+[9.448483] (carto_description) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/carto_description/share/carto_description/local_setup.dsv\n'}
+[9.449243] (carto_description) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/carto_description/share/carto_description/package.dsv\n'}
+[9.450006] (carto_description) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/carto_description/share/ament_index/resource_index/packages/carto_description\n'}
+[9.450756] (carto_description) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/carto_description/share/carto_description/cmake/carto_descriptionConfig.cmake\n'}
+[9.451464] (carto_description) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/carto_description/share/carto_description/cmake/carto_descriptionConfig-version.cmake\n'}
+[9.452400] (carto_description) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/carto_description/share/carto_description/package.xml\n'}
+[9.463150] (carto_description) CommandEnded: {'returncode': 0}
+[9.474671] (-) TimerEvent: {}
+[9.515583] (pid_control) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pid_control_node.dir/src/pid_Control.cpp.o\x1b[0m\n'}
+[9.576427] (-) TimerEvent: {}
+[9.612798] (carto_description) JobEnded: {'identifier': 'carto_description', 'rc': 0}
+[9.676626] (-) TimerEvent: {}
+[9.777650] (-) TimerEvent: {}
+[9.878575] (-) TimerEvent: {}
+[9.979447] (-) TimerEvent: {}
+[10.080333] (-) TimerEvent: {}
+[10.181196] (-) TimerEvent: {}
+[10.282149] (-) TimerEvent: {}
+[10.383197] (-) TimerEvent: {}
+[10.484080] (-) TimerEvent: {}
+[10.584996] (-) TimerEvent: {}
+[10.685927] (-) TimerEvent: {}
+[10.786825] (-) TimerEvent: {}
+[10.887776] (-) TimerEvent: {}
+[10.988710] (-) TimerEvent: {}
+[11.089704] (-) TimerEvent: {}
+[11.190638] (-) TimerEvent: {}
+[11.291588] (-) TimerEvent: {}
+[11.392603] (-) TimerEvent: {}
+[11.493551] (-) TimerEvent: {}
+[11.594555] (-) TimerEvent: {}
+[11.695534] (-) TimerEvent: {}
+[11.796452] (-) TimerEvent: {}
+[11.897538] (-) TimerEvent: {}
+[11.998634] (-) TimerEvent: {}
+[12.099735] (-) TimerEvent: {}
+[12.200831] (-) TimerEvent: {}
+[12.301908] (-) TimerEvent: {}
+[12.403021] (-) TimerEvent: {}
+[12.504150] (-) TimerEvent: {}
+[12.605186] (-) TimerEvent: {}
+[12.706246] (-) TimerEvent: {}
+[12.807307] (-) TimerEvent: {}
+[12.908341] (-) TimerEvent: {}
+[13.009314] (-) TimerEvent: {}
+[13.110247] (-) TimerEvent: {}
+[13.211188] (-) TimerEvent: {}
+[13.312314] (-) TimerEvent: {}
+[13.413319] (-) TimerEvent: {}
+[13.514347] (-) TimerEvent: {}
+[13.615405] (-) TimerEvent: {}
+[13.716438] (-) TimerEvent: {}
+[13.817650] (-) TimerEvent: {}
+[13.918947] (-) TimerEvent: {}
+[14.020104] (-) TimerEvent: {}
+[14.121140] (-) TimerEvent: {}
+[14.222206] (-) TimerEvent: {}
+[14.323147] (-) TimerEvent: {}
+[14.424056] (-) TimerEvent: {}
+[14.525021] (-) TimerEvent: {}
+[14.625949] (-) TimerEvent: {}
+[14.726885] (-) TimerEvent: {}
+[14.827860] (-) TimerEvent: {}
+[14.928770] (-) TimerEvent: {}
+[15.029679] (-) TimerEvent: {}
+[15.130633] (-) TimerEvent: {}
+[15.231814] (-) TimerEvent: {}
+[15.332951] (-) TimerEvent: {}
+[15.434032] (-) TimerEvent: {}
+[15.535061] (-) TimerEvent: {}
+[15.636105] (-) TimerEvent: {}
+[15.737085] (-) TimerEvent: {}
+[15.838007] (-) TimerEvent: {}
+[15.938933] (-) TimerEvent: {}
+[16.039857] (-) TimerEvent: {}
+[16.140790] (-) TimerEvent: {}
+[16.241710] (-) TimerEvent: {}
+[16.342676] (-) TimerEvent: {}
+[16.443601] (-) TimerEvent: {}
+[16.544740] (-) TimerEvent: {}
+[16.645654] (-) TimerEvent: {}
+[16.746567] (-) TimerEvent: {}
+[16.847561] (-) TimerEvent: {}
+[16.948494] (-) TimerEvent: {}
+[17.049420] (-) TimerEvent: {}
+[17.150387] (-) TimerEvent: {}
+[17.251466] (-) TimerEvent: {}
+[17.352556] (-) TimerEvent: {}
+[17.453623] (-) TimerEvent: {}
+[17.554659] (-) TimerEvent: {}
+[17.655594] (-) TimerEvent: {}
+[17.756530] (-) TimerEvent: {}
+[17.857507] (-) TimerEvent: {}
+[17.958436] (-) TimerEvent: {}
+[18.059341] (-) TimerEvent: {}
+[18.160295] (-) TimerEvent: {}
+[18.261293] (-) TimerEvent: {}
+[18.362225] (-) TimerEvent: {}
+[18.463252] (-) TimerEvent: {}
+[18.564261] (-) TimerEvent: {}
+[18.665217] (-) TimerEvent: {}
+[18.766237] (-) TimerEvent: {}
+[18.867293] (-) TimerEvent: {}
+[18.968301] (-) TimerEvent: {}
+[19.069290] (-) TimerEvent: {}
+[19.170270] (-) TimerEvent: {}
+[19.271306] (-) TimerEvent: {}
+[19.372312] (-) TimerEvent: {}
+[19.473332] (-) TimerEvent: {}
+[19.574372] (-) TimerEvent: {}
+[19.675367] (-) TimerEvent: {}
+[19.776314] (-) TimerEvent: {}
+[19.877379] (-) TimerEvent: {}
+[19.978367] (-) TimerEvent: {}
+[20.079365] (-) TimerEvent: {}
+[20.180382] (-) TimerEvent: {}
+[20.281421] (-) TimerEvent: {}
+[20.382454] (-) TimerEvent: {}
+[20.483439] (-) TimerEvent: {}
+[20.584418] (-) TimerEvent: {}
+[20.685379] (-) TimerEvent: {}
+[20.786368] (-) TimerEvent: {}
+[20.887436] (-) TimerEvent: {}
+[20.988425] (-) TimerEvent: {}
+[21.089468] (-) TimerEvent: {}
+[21.190474] (-) TimerEvent: {}
+[21.291440] (-) TimerEvent: {}
+[21.392408] (-) TimerEvent: {}
+[21.493423] (-) TimerEvent: {}
+[21.594378] (-) TimerEvent: {}
+[21.695345] (-) TimerEvent: {}
+[21.796320] (-) TimerEvent: {}
+[21.897371] (-) TimerEvent: {}
+[21.998424] (-) TimerEvent: {}
+[22.099439] (-) TimerEvent: {}
+[22.200422] (-) TimerEvent: {}
+[22.301467] (-) TimerEvent: {}
+[22.402476] (-) TimerEvent: {}
+[22.503394] (-) TimerEvent: {}
+[22.604390] (-) TimerEvent: {}
+[22.705474] (-) TimerEvent: {}
+[22.806429] (-) TimerEvent: {}
+[22.907469] (-) TimerEvent: {}
+[23.008449] (-) TimerEvent: {}
+[23.109434] (-) TimerEvent: {}
+[23.210436] (-) TimerEvent: {}
+[23.311436] (-) TimerEvent: {}
+[23.412447] (-) TimerEvent: {}
+[23.513464] (-) TimerEvent: {}
+[23.614450] (-) TimerEvent: {}
+[23.715448] (-) TimerEvent: {}
+[23.816507] (-) TimerEvent: {}
+[23.917583] (-) TimerEvent: {}
+[24.018525] (-) TimerEvent: {}
+[24.119501] (-) TimerEvent: {}
+[24.220507] (-) TimerEvent: {}
+[24.321491] (-) TimerEvent: {}
+[24.422447] (-) TimerEvent: {}
+[24.523456] (-) TimerEvent: {}
+[24.624480] (-) TimerEvent: {}
+[24.725514] (-) TimerEvent: {}
+[24.826474] (-) TimerEvent: {}
+[24.927498] (-) TimerEvent: {}
+[25.028483] (-) TimerEvent: {}
+[25.129488] (-) TimerEvent: {}
+[25.230470] (-) TimerEvent: {}
+[25.331544] (-) TimerEvent: {}
+[25.432552] (-) TimerEvent: {}
+[25.533554] (-) TimerEvent: {}
+[25.634580] (-) TimerEvent: {}
+[25.735663] (-) TimerEvent: {}
+[25.836636] (-) TimerEvent: {}
+[25.937779] (-) TimerEvent: {}
+[26.038775] (-) TimerEvent: {}
+[26.139808] (-) TimerEvent: {}
+[26.240801] (-) TimerEvent: {}
+[26.341821] (-) TimerEvent: {}
+[26.442873] (-) TimerEvent: {}
+[26.543849] (-) TimerEvent: {}
+[26.644874] (-) TimerEvent: {}
+[26.745869] (-) TimerEvent: {}
+[26.846891] (-) TimerEvent: {}
+[26.947957] (-) TimerEvent: {}
+[27.048951] (-) TimerEvent: {}
+[27.149967] (-) TimerEvent: {}
+[27.250981] (-) TimerEvent: {}
+[27.351908] (-) TimerEvent: {}
+[27.452862] (-) TimerEvent: {}
+[27.553783] (-) TimerEvent: {}
+[27.654684] (-) TimerEvent: {}
+[27.755767] (-) TimerEvent: {}
+[27.856872] (-) TimerEvent: {}
+[27.958062] (-) TimerEvent: {}
+[28.059005] (-) TimerEvent: {}
+[28.159930] (-) TimerEvent: {}
+[28.260844] (-) TimerEvent: {}
+[28.361785] (-) TimerEvent: {}
+[28.462770] (-) TimerEvent: {}
+[28.563701] (-) TimerEvent: {}
+[28.664617] (-) TimerEvent: {}
+[28.765563] (-) TimerEvent: {}
+[28.866488] (-) TimerEvent: {}
+[28.967496] (-) TimerEvent: {}
+[29.068443] (-) TimerEvent: {}
+[29.169360] (-) TimerEvent: {}
+[29.270286] (-) TimerEvent: {}
+[29.371188] (-) TimerEvent: {}
+[29.472111] (-) TimerEvent: {}
+[29.573019] (-) TimerEvent: {}
+[29.673956] (-) TimerEvent: {}
+[29.774948] (-) TimerEvent: {}
+[29.875942] (-) TimerEvent: {}
+[29.977007] (-) TimerEvent: {}
+[30.078038] (-) TimerEvent: {}
+[30.179026] (-) TimerEvent: {}
+[30.280033] (-) TimerEvent: {}
+[30.381105] (-) TimerEvent: {}
+[30.482151] (-) TimerEvent: {}
+[30.583105] (-) TimerEvent: {}
+[30.684032] (-) TimerEvent: {}
+[30.784948] (-) TimerEvent: {}
+[30.885985] (-) TimerEvent: {}
+[30.986916] (-) TimerEvent: {}
+[31.087860] (-) TimerEvent: {}
+[31.188772] (-) TimerEvent: {}
+[31.289693] (-) TimerEvent: {}
+[31.390719] (-) TimerEvent: {}
+[31.491645] (-) TimerEvent: {}
+[31.592584] (-) TimerEvent: {}
+[31.693489] (-) TimerEvent: {}
+[31.794405] (-) TimerEvent: {}
+[31.895315] (-) TimerEvent: {}
+[31.996243] (-) TimerEvent: {}
+[32.097259] (-) TimerEvent: {}
+[32.198156] (-) TimerEvent: {}
+[32.299090] (-) TimerEvent: {}
+[32.400015] (-) TimerEvent: {}
+[32.500965] (-) TimerEvent: {}
+[32.602013] (-) TimerEvent: {}
+[32.703004] (-) TimerEvent: {}
+[32.803935] (-) TimerEvent: {}
+[32.904861] (-) TimerEvent: {}
+[33.005968] (-) TimerEvent: {}
+[33.107036] (-) TimerEvent: {}
+[33.207980] (-) TimerEvent: {}
+[33.308926] (-) TimerEvent: {}
+[33.409824] (-) TimerEvent: {}
+[33.510827] (-) TimerEvent: {}
+[33.611685] (-) TimerEvent: {}
+[33.712585] (-) TimerEvent: {}
+[33.813452] (-) TimerEvent: {}
+[33.914352] (-) TimerEvent: {}
+[34.015224] (-) TimerEvent: {}
+[34.116089] (-) TimerEvent: {}
+[34.217027] (-) TimerEvent: {}
+[34.317919] (-) TimerEvent: {}
+[34.418819] (-) TimerEvent: {}
+[34.519702] (-) TimerEvent: {}
+[34.620609] (-) TimerEvent: {}
+[34.721564] (-) TimerEvent: {}
+[34.822486] (-) TimerEvent: {}
+[34.923483] (-) TimerEvent: {}
+[35.024348] (-) TimerEvent: {}
+[35.125245] (-) TimerEvent: {}
+[35.226194] (-) TimerEvent: {}
+[35.327218] (-) TimerEvent: {}
+[35.428180] (-) TimerEvent: {}
+[35.529200] (-) TimerEvent: {}
+[35.630159] (-) TimerEvent: {}
+[35.731160] (-) TimerEvent: {}
+[35.832138] (-) TimerEvent: {}
+[35.933074] (-) TimerEvent: {}
+[36.033990] (-) TimerEvent: {}
+[36.134904] (-) TimerEvent: {}
+[36.235815] (-) TimerEvent: {}
+[36.336769] (-) TimerEvent: {}
+[36.437737] (-) TimerEvent: {}
+[36.538647] (-) TimerEvent: {}
+[36.639569] (-) TimerEvent: {}
+[36.740523] (-) TimerEvent: {}
+[36.841448] (-) TimerEvent: {}
+[36.942391] (-) TimerEvent: {}
+[37.043313] (-) TimerEvent: {}
+[37.144222] (-) TimerEvent: {}
+[37.245245] (-) TimerEvent: {}
+[37.347049] (-) TimerEvent: {}
+[37.448004] (-) TimerEvent: {}
+[37.548906] (-) TimerEvent: {}
+[37.649834] (-) TimerEvent: {}
+[37.750760] (-) TimerEvent: {}
+[37.851674] (-) TimerEvent: {}
+[37.952578] (-) TimerEvent: {}
+[38.053494] (-) TimerEvent: {}
+[38.154416] (-) TimerEvent: {}
+[38.255338] (-) TimerEvent: {}
+[38.356335] (-) TimerEvent: {}
+[38.457278] (-) TimerEvent: {}
+[38.558189] (-) TimerEvent: {}
+[38.659158] (-) TimerEvent: {}
+[38.760106] (-) TimerEvent: {}
+[38.861077] (-) TimerEvent: {}
+[38.961997] (-) TimerEvent: {}
+[39.063041] (-) TimerEvent: {}
+[39.163951] (-) TimerEvent: {}
+[39.264846] (-) TimerEvent: {}
+[39.365757] (-) TimerEvent: {}
+[39.466726] (-) TimerEvent: {}
+[39.567666] (-) TimerEvent: {}
+[39.668571] (-) TimerEvent: {}
+[39.769479] (-) TimerEvent: {}
+[39.870436] (-) TimerEvent: {}
+[39.971362] (-) TimerEvent: {}
+[40.072318] (-) TimerEvent: {}
+[40.173251] (-) TimerEvent: {}
+[40.274256] (-) TimerEvent: {}
+[40.375247] (-) TimerEvent: {}
+[40.476283] (-) TimerEvent: {}
+[40.577437] (-) TimerEvent: {}
+[40.678414] (-) TimerEvent: {}
+[40.779335] (-) TimerEvent: {}
+[40.880282] (-) TimerEvent: {}
+[40.981219] (-) TimerEvent: {}
+[41.082169] (-) TimerEvent: {}
+[41.183097] (-) TimerEvent: {}
+[41.284040] (-) TimerEvent: {}
+[41.384975] (-) TimerEvent: {}
+[41.485882] (-) TimerEvent: {}
+[41.586939] (-) TimerEvent: {}
+[41.687893] (-) TimerEvent: {}
+[41.788827] (-) TimerEvent: {}
+[41.889785] (-) TimerEvent: {}
+[41.990727] (-) TimerEvent: {}
+[42.091643] (-) TimerEvent: {}
+[42.192608] (-) TimerEvent: {}
+[42.293653] (-) TimerEvent: {}
+[42.394580] (-) TimerEvent: {}
+[42.495513] (-) TimerEvent: {}
+[42.596450] (-) TimerEvent: {}
+[42.697468] (-) TimerEvent: {}
+[42.798405] (-) TimerEvent: {}
+[42.899330] (-) TimerEvent: {}
+[43.000248] (-) TimerEvent: {}
+[43.101160] (-) TimerEvent: {}
+[43.202093] (-) TimerEvent: {}
+[43.303045] (-) TimerEvent: {}
+[43.404051] (-) TimerEvent: {}
+[43.505072] (-) TimerEvent: {}
+[43.606002] (-) TimerEvent: {}
+[43.706980] (-) TimerEvent: {}
+[43.807990] (-) TimerEvent: {}
+[43.908956] (-) TimerEvent: {}
+[44.009899] (-) TimerEvent: {}
+[44.110835] (-) TimerEvent: {}
+[44.211739] (-) TimerEvent: {}
+[44.312690] (-) TimerEvent: {}
+[44.413611] (-) TimerEvent: {}
+[44.514500] (-) TimerEvent: {}
+[44.615452] (-) TimerEvent: {}
+[44.716382] (-) TimerEvent: {}
+[44.817533] (-) TimerEvent: {}
+[44.918450] (-) TimerEvent: {}
+[45.019403] (-) TimerEvent: {}
+[45.120381] (-) TimerEvent: {}
+[45.221351] (-) TimerEvent: {}
+[45.322396] (-) TimerEvent: {}
+[45.423326] (-) TimerEvent: {}
+[45.524280] (-) TimerEvent: {}
+[45.625212] (-) TimerEvent: {}
+[45.726083] (-) TimerEvent: {}
+[45.827044] (-) TimerEvent: {}
+[45.927951] (-) TimerEvent: {}
+[46.028841] (-) TimerEvent: {}
+[46.129749] (-) TimerEvent: {}
+[46.230674] (-) TimerEvent: {}
+[46.331553] (-) TimerEvent: {}
+[46.432485] (-) TimerEvent: {}
+[46.533420] (-) TimerEvent: {}
+[46.634298] (-) TimerEvent: {}
+[46.735201] (-) TimerEvent: {}
+[46.836119] (-) TimerEvent: {}
+[46.937084] (-) TimerEvent: {}
+[47.037979] (-) TimerEvent: {}
+[47.139003] (-) TimerEvent: {}
+[47.239880] (-) TimerEvent: {}
+[47.340796] (-) TimerEvent: {}
+[47.441725] (-) TimerEvent: {}
+[47.542702] (-) TimerEvent: {}
+[47.643618] (-) TimerEvent: {}
+[47.744505] (-) TimerEvent: {}
+[47.845415] (-) TimerEvent: {}
+[47.946309] (-) TimerEvent: {}
+[48.047313] (-) TimerEvent: {}
+[48.148383] (-) TimerEvent: {}
+[48.249302] (-) TimerEvent: {}
+[48.350243] (-) TimerEvent: {}
+[48.451174] (-) TimerEvent: {}
+[48.552103] (-) TimerEvent: {}
+[48.653017] (-) TimerEvent: {}
+[48.754081] (-) TimerEvent: {}
+[48.854973] (-) TimerEvent: {}
+[48.955881] (-) TimerEvent: {}
+[49.056864] (-) TimerEvent: {}
+[49.157775] (-) TimerEvent: {}
+[49.258705] (-) TimerEvent: {}
+[49.359615] (-) TimerEvent: {}
+[49.460555] (-) TimerEvent: {}
+[49.561529] (-) TimerEvent: {}
+[49.662466] (-) TimerEvent: {}
+[49.763406] (-) TimerEvent: {}
+[49.864325] (-) TimerEvent: {}
+[49.965237] (-) TimerEvent: {}
+[50.066154] (-) TimerEvent: {}
+[50.167277] (-) TimerEvent: {}
+[50.268204] (-) TimerEvent: {}
+[50.369134] (-) TimerEvent: {}
+[50.470054] (-) TimerEvent: {}
+[50.573654] (-) TimerEvent: {}
+[50.674586] (-) TimerEvent: {}
+[50.775516] (-) TimerEvent: {}
+[50.876401] (-) TimerEvent: {}
+[50.977396] (-) TimerEvent: {}
+[51.078306] (-) TimerEvent: {}
+[51.179195] (-) TimerEvent: {}
+[51.280220] (-) TimerEvent: {}
+[51.381118] (-) TimerEvent: {}
+[51.482067] (-) TimerEvent: {}
+[51.583066] (-) TimerEvent: {}
+[51.684090] (-) TimerEvent: {}
+[51.785131] (-) TimerEvent: {}
+[51.886208] (-) TimerEvent: {}
+[51.987290] (-) TimerEvent: {}
+[52.088323] (-) TimerEvent: {}
+[52.189420] (-) TimerEvent: {}
+[52.290532] (-) TimerEvent: {}
+[52.391719] (-) TimerEvent: {}
+[52.492858] (-) TimerEvent: {}
+[52.593922] (-) TimerEvent: {}
+[52.695014] (-) TimerEvent: {}
+[52.796115] (-) TimerEvent: {}
+[52.897459] (-) TimerEvent: {}
+[52.998421] (-) TimerEvent: {}
+[53.099445] (-) TimerEvent: {}
+[53.200570] (-) TimerEvent: {}
+[53.301720] (-) TimerEvent: {}
+[53.402915] (-) TimerEvent: {}
+[53.504005] (-) TimerEvent: {}
+[53.604976] (-) TimerEvent: {}
+[53.705956] (-) TimerEvent: {}
+[53.806966] (-) TimerEvent: {}
+[53.907965] (-) TimerEvent: {}
+[54.008945] (-) TimerEvent: {}
+[54.109959] (-) TimerEvent: {}
+[54.211033] (-) TimerEvent: {}
+[54.312162] (-) TimerEvent: {}
+[54.413152] (-) TimerEvent: {}
+[54.514134] (-) TimerEvent: {}
+[54.615122] (-) TimerEvent: {}
+[54.716071] (-) TimerEvent: {}
+[54.817149] (-) TimerEvent: {}
+[54.918145] (-) TimerEvent: {}
+[55.019141] (-) TimerEvent: {}
+[55.120140] (-) TimerEvent: {}
+[55.221324] (-) TimerEvent: {}
+[55.322441] (-) TimerEvent: {}
+[55.423571] (-) TimerEvent: {}
+[55.524634] (-) TimerEvent: {}
+[55.625611] (-) TimerEvent: {}
+[55.726947] (-) TimerEvent: {}
+[55.827948] (-) TimerEvent: {}
+[55.928942] (-) TimerEvent: {}
+[56.029938] (-) TimerEvent: {}
+[56.130928] (-) TimerEvent: {}
+[56.231936] (-) TimerEvent: {}
+[56.332984] (-) TimerEvent: {}
+[56.433996] (-) TimerEvent: {}
+[56.534997] (-) TimerEvent: {}
+[56.635990] (-) TimerEvent: {}
+[56.736989] (-) TimerEvent: {}
+[56.838016] (-) TimerEvent: {}
+[56.938964] (-) TimerEvent: {}
+[57.039960] (-) TimerEvent: {}
+[57.140958] (-) TimerEvent: {}
+[57.242040] (-) TimerEvent: {}
+[57.343068] (-) TimerEvent: {}
+[57.443991] (-) TimerEvent: {}
+[57.545244] (-) TimerEvent: {}
+[57.646299] (-) TimerEvent: {}
+[57.747486] (-) TimerEvent: {}
+[57.848534] (-) TimerEvent: {}
+[57.949583] (-) TimerEvent: {}
+[58.050703] (-) TimerEvent: {}
+[58.151737] (-) TimerEvent: {}
+[58.252794] (-) TimerEvent: {}
+[58.353857] (-) TimerEvent: {}
+[58.454916] (-) TimerEvent: {}
+[58.556073] (-) TimerEvent: {}
+[58.657317] (-) TimerEvent: {}
+[58.758285] (-) TimerEvent: {}
+[58.859395] (-) TimerEvent: {}
+[58.960933] (-) TimerEvent: {}
+[59.061938] (-) TimerEvent: {}
+[59.162933] (-) TimerEvent: {}
+[59.263973] (-) TimerEvent: {}
+[59.364992] (-) TimerEvent: {}
+[59.466013] (-) TimerEvent: {}
+[59.567110] (-) TimerEvent: {}
+[59.668110] (-) TimerEvent: {}
+[59.769111] (-) TimerEvent: {}
+[59.870115] (-) TimerEvent: {}
+[59.971124] (-) TimerEvent: {}
+[60.072135] (-) TimerEvent: {}
+[60.173022] (-) TimerEvent: {}
+[60.273936] (-) TimerEvent: {}
+[60.374848] (-) TimerEvent: {}
+[60.475745] (-) TimerEvent: {}
+[60.576621] (-) TimerEvent: {}
+[60.677689] (-) TimerEvent: {}
+[60.778602] (-) TimerEvent: {}
+[60.879534] (-) TimerEvent: {}
+[60.980486] (-) TimerEvent: {}
+[61.081419] (-) TimerEvent: {}
+[61.182437] (-) TimerEvent: {}
+[61.283354] (-) TimerEvent: {}
+[61.384248] (-) TimerEvent: {}
+[61.485159] (-) TimerEvent: {}
+[61.586078] (-) TimerEvent: {}
+[61.687015] (-) TimerEvent: {}
+[61.787983] (-) TimerEvent: {}
+[61.888919] (-) TimerEvent: {}
+[61.989837] (-) TimerEvent: {}
+[62.090812] (-) TimerEvent: {}
+[62.191766] (-) TimerEvent: {}
+[62.292755] (-) TimerEvent: {}
+[62.393729] (-) TimerEvent: {}
+[62.494635] (-) TimerEvent: {}
+[62.595522] (-) TimerEvent: {}
+[62.696419] (-) TimerEvent: {}
+[62.797390] (-) TimerEvent: {}
+[62.898316] (-) TimerEvent: {}
+[62.999233] (-) TimerEvent: {}
+[63.100179] (-) TimerEvent: {}
+[63.201073] (-) TimerEvent: {}
+[63.302129] (-) TimerEvent: {}
+[63.396838] (uart_to_mcu) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable uart_to_mcu_node\x1b[0m\n'}
+[63.402290] (-) TimerEvent: {}
+[63.503192] (-) TimerEvent: {}
+[63.604084] (-) TimerEvent: {}
+[63.705005] (-) TimerEvent: {}
+[63.805930] (-) TimerEvent: {}
+[63.906860] (-) TimerEvent: {}
+[64.007801] (-) TimerEvent: {}
+[64.108800] (-) TimerEvent: {}
+[64.209778] (-) TimerEvent: {}
+[64.310779] (-) TimerEvent: {}
+[64.411733] (-) TimerEvent: {}
+[64.512699] (-) TimerEvent: {}
+[64.613660] (-) TimerEvent: {}
+[64.714601] (-) TimerEvent: {}
+[64.815536] (-) TimerEvent: {}
+[64.916442] (-) TimerEvent: {}
+[65.017543] (-) TimerEvent: {}
+[65.118428] (-) TimerEvent: {}
+[65.219322] (-) TimerEvent: {}
+[65.320286] (-) TimerEvent: {}
+[65.421256] (-) TimerEvent: {}
+[65.522172] (-) TimerEvent: {}
+[65.623058] (-) TimerEvent: {}
+[65.723971] (-) TimerEvent: {}
+[65.824874] (-) TimerEvent: {}
+[65.925754] (-) TimerEvent: {}
+[66.026710] (-) TimerEvent: {}
+[66.127620] (-) TimerEvent: {}
+[66.228661] (-) TimerEvent: {}
+[66.329549] (-) TimerEvent: {}
+[66.430412] (-) TimerEvent: {}
+[66.531300] (-) TimerEvent: {}
+[66.553220] (uart_to_mcu) StdoutLine: {'line': b'[100%] Built target uart_to_mcu_node\n'}
+[66.603762] (uart_to_mcu) CommandEnded: {'returncode': 0}
+[66.606609] (uart_to_mcu) JobProgress: {'identifier': 'uart_to_mcu', 'progress': 'install'}
+[66.608125] (uart_to_mcu) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu'], 'cwd': '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu', 'env': OrderedDict([('USER', 'sunrise'), ('SSH_CLIENT', '10.249.66.214 56807 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sunrise/bluesea2_ws/install/base/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/sunrise'), ('OLDPWD', '/home/sunrise/lidar_locate_ws/lidar_locate_ws'), ('SSH_TTY', '/dev/pts/5'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/sunrise/cartographer_ws/install:/home/sunrise/bluesea2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunrise'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '8'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:13.0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/sunrise/cartographer_ws/install/my_cartographer_config:/home/sunrise/bluesea2_ws/install/bluesea2:/home/sunrise/bluesea2_ws/install/base:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu'), ('SSH_CONNECTION', '10.249.66.214 56807 10.249.83.222 22'), ('PYTHONPATH', '/home/sunrise/bluesea2_ws/install/base/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/sunrise/cartographer_ws/install/my_cartographer_config:/home/sunrise/bluesea2_ws/install/bluesea2:/home/sunrise/bluesea2_ws/install/base:/opt/ros/humble')]), 'shell': False}
+[66.631526] (-) TimerEvent: {}
+[66.644361] (uart_to_mcu) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[66.645756] (uart_to_mcu) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/lib/uart_to_mcu/uart_to_mcu_node\n'}
+[66.668273] (uart_to_mcu) StdoutLine: {'line': b'-- Set runtime path of "/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/lib/uart_to_mcu/uart_to_mcu_node" to ""\n'}
+[66.669383] (uart_to_mcu) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/include\n'}
+[66.670074] (uart_to_mcu) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/include/uart_to_mcu\n'}
+[66.670837] (uart_to_mcu) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/include/uart_to_mcu/uart_to_mcu.hpp\n'}
+[66.671435] (uart_to_mcu) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/include/uart_to_mcu.hpp\n'}
+[66.672149] (uart_to_mcu) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/uart_to_mcu/launch\n'}
+[66.672930] (uart_to_mcu) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/uart_to_mcu/launch/uart_to_mcu.launch.py\n'}
+[66.673608] (uart_to_mcu) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/ament_index/resource_index/package_run_dependencies/uart_to_mcu\n'}
+[66.674307] (uart_to_mcu) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/ament_index/resource_index/parent_prefix_path/uart_to_mcu\n'}
+[66.674972] (uart_to_mcu) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/uart_to_mcu/environment/ament_prefix_path.sh\n'}
+[66.675677] (uart_to_mcu) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/uart_to_mcu/environment/ament_prefix_path.dsv\n'}
+[66.676393] (uart_to_mcu) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/uart_to_mcu/environment/path.sh\n'}
+[66.677249] (uart_to_mcu) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/uart_to_mcu/environment/path.dsv\n'}
+[66.678022] (uart_to_mcu) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/uart_to_mcu/local_setup.bash\n'}
+[66.678731] (uart_to_mcu) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/uart_to_mcu/local_setup.sh\n'}
+[66.679469] (uart_to_mcu) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/uart_to_mcu/local_setup.zsh\n'}
+[66.680194] (uart_to_mcu) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/uart_to_mcu/local_setup.dsv\n'}
+[66.680902] (uart_to_mcu) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/uart_to_mcu/package.dsv\n'}
+[66.681649] (uart_to_mcu) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/ament_index/resource_index/packages/uart_to_mcu\n'}
+[66.682353] (uart_to_mcu) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/uart_to_mcu/cmake/uart_to_mcuConfig.cmake\n'}
+[66.682946] (uart_to_mcu) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/uart_to_mcu/cmake/uart_to_mcuConfig-version.cmake\n'}
+[66.683553] (uart_to_mcu) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/uart_to_mcu/package.xml\n'}
+[66.691323] (uart_to_mcu) CommandEnded: {'returncode': 0}
+[66.732240] (-) TimerEvent: {}
+[66.782218] (uart_to_mcu) JobEnded: {'identifier': 'uart_to_mcu', 'rc': 0}
+[66.832455] (-) TimerEvent: {}
+[66.933352] (-) TimerEvent: {}
+[67.034194] (-) TimerEvent: {}
+[67.135022] (-) TimerEvent: {}
+[67.235866] (-) TimerEvent: {}
+[67.336734] (-) TimerEvent: {}
+[67.437632] (-) TimerEvent: {}
+[67.538476] (-) TimerEvent: {}
+[67.639337] (-) TimerEvent: {}
+[67.740197] (-) TimerEvent: {}
+[67.841000] (-) TimerEvent: {}
+[67.941862] (-) TimerEvent: {}
+[68.042716] (-) TimerEvent: {}
+[68.143580] (-) TimerEvent: {}
+[68.244408] (-) TimerEvent: {}
+[68.345255] (-) TimerEvent: {}
+[68.446107] (-) TimerEvent: {}
+[68.546987] (-) TimerEvent: {}
+[68.647851] (-) TimerEvent: {}
+[68.748722] (-) TimerEvent: {}
+[68.849640] (-) TimerEvent: {}
+[68.950529] (-) TimerEvent: {}
+[69.051435] (-) TimerEvent: {}
+[69.152368] (-) TimerEvent: {}
+[69.253236] (-) TimerEvent: {}
+[69.354105] (-) TimerEvent: {}
+[69.454997] (-) TimerEvent: {}
+[69.555903] (-) TimerEvent: {}
+[69.656817] (-) TimerEvent: {}
+[69.757688] (-) TimerEvent: {}
+[69.858624] (-) TimerEvent: {}
+[69.959499] (-) TimerEvent: {}
+[70.060453] (-) TimerEvent: {}
+[70.161407] (-) TimerEvent: {}
+[70.262233] (-) TimerEvent: {}
+[70.363092] (-) TimerEvent: {}
+[70.463934] (-) TimerEvent: {}
+[70.564803] (-) TimerEvent: {}
+[70.665655] (-) TimerEvent: {}
+[70.766514] (-) TimerEvent: {}
+[70.867451] (-) TimerEvent: {}
+[70.968403] (-) TimerEvent: {}
+[71.069530] (-) TimerEvent: {}
+[71.170429] (-) TimerEvent: {}
+[71.271240] (-) TimerEvent: {}
+[71.372090] (-) TimerEvent: {}
+[71.472949] (-) TimerEvent: {}
+[71.573775] (-) TimerEvent: {}
+[71.674617] (-) TimerEvent: {}
+[71.775470] (-) TimerEvent: {}
+[71.876328] (-) TimerEvent: {}
+[71.977263] (-) TimerEvent: {}
+[72.078104] (-) TimerEvent: {}
+[72.178951] (-) TimerEvent: {}
+[72.279791] (-) TimerEvent: {}
+[72.380629] (-) TimerEvent: {}
+[72.481443] (-) TimerEvent: {}
+[72.582323] (-) TimerEvent: {}
+[72.683157] (-) TimerEvent: {}
+[72.784012] (-) TimerEvent: {}
+[72.884820] (-) TimerEvent: {}
+[72.985651] (-) TimerEvent: {}
+[73.086504] (-) TimerEvent: {}
+[73.187447] (-) TimerEvent: {}
+[73.288303] (-) TimerEvent: {}
+[73.389166] (-) TimerEvent: {}
+[73.490010] (-) TimerEvent: {}
+[73.590865] (-) TimerEvent: {}
+[73.691706] (-) TimerEvent: {}
+[73.792553] (-) TimerEvent: {}
+[73.893409] (-) TimerEvent: {}
+[73.994216] (-) TimerEvent: {}
+[74.095051] (-) TimerEvent: {}
+[74.195882] (-) TimerEvent: {}
+[74.296793] (-) TimerEvent: {}
+[74.397676] (-) TimerEvent: {}
+[74.498506] (-) TimerEvent: {}
+[74.599329] (-) TimerEvent: {}
+[74.700165] (-) TimerEvent: {}
+[74.800989] (-) TimerEvent: {}
+[74.901877] (-) TimerEvent: {}
+[75.002721] (-) TimerEvent: {}
+[75.103555] (-) TimerEvent: {}
+[75.204391] (-) TimerEvent: {}
+[75.305256] (-) TimerEvent: {}
+[75.406079] (-) TimerEvent: {}
+[75.507011] (-) TimerEvent: {}
+[75.607923] (-) TimerEvent: {}
+[75.708948] (-) TimerEvent: {}
+[75.809907] (-) TimerEvent: {}
+[75.910831] (-) TimerEvent: {}
+[76.011780] (-) TimerEvent: {}
+[76.112714] (-) TimerEvent: {}
+[76.213602] (-) TimerEvent: {}
+[76.314530] (-) TimerEvent: {}
+[76.415435] (-) TimerEvent: {}
+[76.516359] (-) TimerEvent: {}
+[76.617404] (-) TimerEvent: {}
+[76.718301] (-) TimerEvent: {}
+[76.819228] (-) TimerEvent: {}
+[76.920153] (-) TimerEvent: {}
+[77.021073] (-) TimerEvent: {}
+[77.122036] (-) TimerEvent: {}
+[77.222876] (-) TimerEvent: {}
+[77.323732] (-) TimerEvent: {}
+[77.424571] (-) TimerEvent: {}
+[77.525440] (-) TimerEvent: {}
+[77.626271] (-) TimerEvent: {}
+[77.727228] (-) TimerEvent: {}
+[77.828069] (-) TimerEvent: {}
+[77.928968] (-) TimerEvent: {}
+[78.029837] (-) TimerEvent: {}
+[78.130727] (-) TimerEvent: {}
+[78.231566] (-) TimerEvent: {}
+[78.332432] (-) TimerEvent: {}
+[78.433279] (-) TimerEvent: {}
+[78.534187] (-) TimerEvent: {}
+[78.635005] (-) TimerEvent: {}
+[78.735855] (-) TimerEvent: {}
+[78.836737] (-) TimerEvent: {}
+[78.937715] (-) TimerEvent: {}
+[79.038538] (-) TimerEvent: {}
+[79.139369] (-) TimerEvent: {}
+[79.240245] (-) TimerEvent: {}
+[79.341118] (-) TimerEvent: {}
+[79.442141] (-) TimerEvent: {}
+[79.543053] (-) TimerEvent: {}
+[79.643958] (-) TimerEvent: {}
+[79.744885] (-) TimerEvent: {}
+[79.845782] (-) TimerEvent: {}
+[79.946760] (-) TimerEvent: {}
+[80.047681] (-) TimerEvent: {}
+[80.148575] (-) TimerEvent: {}
+[80.249495] (-) TimerEvent: {}
+[80.350396] (-) TimerEvent: {}
+[80.451331] (-) TimerEvent: {}
+[80.552158] (-) TimerEvent: {}
+[80.652976] (-) TimerEvent: {}
+[80.753846] (-) TimerEvent: {}
+[80.854685] (-) TimerEvent: {}
+[80.955539] (-) TimerEvent: {}
+[81.056512] (-) TimerEvent: {}
+[81.157397] (-) TimerEvent: {}
+[81.258261] (-) TimerEvent: {}
+[81.359071] (-) TimerEvent: {}
+[81.459914] (-) TimerEvent: {}
+[81.560862] (-) TimerEvent: {}
+[81.661665] (-) TimerEvent: {}
+[81.762542] (-) TimerEvent: {}
+[81.863400] (-) TimerEvent: {}
+[81.964244] (-) TimerEvent: {}
+[82.065089] (-) TimerEvent: {}
+[82.165920] (-) TimerEvent: {}
+[82.266855] (-) TimerEvent: {}
+[82.367760] (-) TimerEvent: {}
+[82.468672] (-) TimerEvent: {}
+[82.569565] (-) TimerEvent: {}
+[82.670581] (-) TimerEvent: {}
+[82.771654] (-) TimerEvent: {}
+[82.872626] (-) TimerEvent: {}
+[82.973516] (-) TimerEvent: {}
+[83.074411] (-) TimerEvent: {}
+[83.175446] (-) TimerEvent: {}
+[83.276325] (-) TimerEvent: {}
+[83.377251] (-) TimerEvent: {}
+[83.478221] (-) TimerEvent: {}
+[83.579064] (-) TimerEvent: {}
+[83.679857] (-) TimerEvent: {}
+[83.780691] (-) TimerEvent: {}
+[83.881502] (-) TimerEvent: {}
+[83.982329] (-) TimerEvent: {}
+[84.083123] (-) TimerEvent: {}
+[84.183944] (-) TimerEvent: {}
+[84.284783] (-) TimerEvent: {}
+[84.385607] (-) TimerEvent: {}
+[84.486459] (-) TimerEvent: {}
+[84.587382] (-) TimerEvent: {}
+[84.688247] (-) TimerEvent: {}
+[84.789088] (-) TimerEvent: {}
+[84.889909] (-) TimerEvent: {}
+[84.990732] (-) TimerEvent: {}
+[85.091566] (-) TimerEvent: {}
+[85.192411] (-) TimerEvent: {}
+[85.293285] (-) TimerEvent: {}
+[85.394122] (-) TimerEvent: {}
+[85.494966] (-) TimerEvent: {}
+[85.595938] (-) TimerEvent: {}
+[85.696873] (-) TimerEvent: {}
+[85.797742] (-) TimerEvent: {}
+[85.898568] (-) TimerEvent: {}
+[85.999417] (-) TimerEvent: {}
+[86.100350] (-) TimerEvent: {}
+[86.201311] (-) TimerEvent: {}
+[86.302299] (-) TimerEvent: {}
+[86.403233] (-) TimerEvent: {}
+[86.504194] (-) TimerEvent: {}
+[86.605151] (-) TimerEvent: {}
+[86.706188] (-) TimerEvent: {}
+[86.807247] (-) TimerEvent: {}
+[86.908193] (-) TimerEvent: {}
+[87.009095] (-) TimerEvent: {}
+[87.109990] (-) TimerEvent: {}
+[87.210846] (-) TimerEvent: {}
+[87.311728] (-) TimerEvent: {}
+[87.414676] (-) TimerEvent: {}
+[87.515828] (-) TimerEvent: {}
+[87.616858] (-) TimerEvent: {}
+[87.717787] (-) TimerEvent: {}
+[87.818708] (-) TimerEvent: {}
+[87.919721] (-) TimerEvent: {}
+[88.020564] (-) TimerEvent: {}
+[88.121561] (-) TimerEvent: {}
+[88.222456] (-) TimerEvent: {}
+[88.323313] (-) TimerEvent: {}
+[88.424261] (-) TimerEvent: {}
+[88.525206] (-) TimerEvent: {}
+[88.626125] (-) TimerEvent: {}
+[88.727098] (-) TimerEvent: {}
+[88.827947] (-) TimerEvent: {}
+[88.928892] (-) TimerEvent: {}
+[89.029839] (-) TimerEvent: {}
+[89.130768] (-) TimerEvent: {}
+[89.231792] (-) TimerEvent: {}
+[89.332662] (-) TimerEvent: {}
+[89.433585] (-) TimerEvent: {}
+[89.534472] (-) TimerEvent: {}
+[89.635510] (-) TimerEvent: {}
+[89.736524] (-) TimerEvent: {}
+[89.837552] (-) TimerEvent: {}
+[89.938579] (-) TimerEvent: {}
+[90.039603] (-) TimerEvent: {}
+[90.140422] (-) TimerEvent: {}
+[90.241230] (-) TimerEvent: {}
+[90.342003] (-) TimerEvent: {}
+[90.442789] (-) TimerEvent: {}
+[90.543584] (-) TimerEvent: {}
+[90.644420] (-) TimerEvent: {}
+[90.745278] (-) TimerEvent: {}
+[90.846153] (-) TimerEvent: {}
+[90.947039] (-) TimerEvent: {}
+[91.047860] (-) TimerEvent: {}
+[91.148707] (-) TimerEvent: {}
+[91.249900] (-) TimerEvent: {}
+[91.350715] (-) TimerEvent: {}
+[91.451498] (-) TimerEvent: {}
+[91.552372] (-) TimerEvent: {}
+[91.653192] (-) TimerEvent: {}
+[91.754014] (-) TimerEvent: {}
+[91.798579] (pid_control) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pid_control_node\x1b[0m\n'}
+[91.854212] (-) TimerEvent: {}
+[91.955009] (-) TimerEvent: {}
+[92.055835] (-) TimerEvent: {}
+[92.156769] (-) TimerEvent: {}
+[92.257612] (-) TimerEvent: {}
+[92.358544] (-) TimerEvent: {}
+[92.459794] (-) TimerEvent: {}
+[92.560685] (-) TimerEvent: {}
+[92.661630] (-) TimerEvent: {}
+[92.762623] (-) TimerEvent: {}
+[92.863567] (-) TimerEvent: {}
+[92.964530] (-) TimerEvent: {}
+[93.065425] (-) TimerEvent: {}
+[93.166277] (-) TimerEvent: {}
+[93.267183] (-) TimerEvent: {}
+[93.368059] (-) TimerEvent: {}
+[93.469028] (-) TimerEvent: {}
+[93.570012] (-) TimerEvent: {}
+[93.670878] (-) TimerEvent: {}
+[93.771686] (-) TimerEvent: {}
+[93.872532] (-) TimerEvent: {}
+[93.973357] (-) TimerEvent: {}
+[94.074137] (-) TimerEvent: {}
+[94.174946] (-) TimerEvent: {}
+[94.275776] (-) TimerEvent: {}
+[94.376568] (-) TimerEvent: {}
+[94.477402] (-) TimerEvent: {}
+[94.578221] (-) TimerEvent: {}
+[94.679016] (-) TimerEvent: {}
+[94.779852] (-) TimerEvent: {}
+[94.880697] (-) TimerEvent: {}
+[94.981496] (-) TimerEvent: {}
+[95.082338] (-) TimerEvent: {}
+[95.183151] (-) TimerEvent: {}
+[95.283930] (-) TimerEvent: {}
+[95.384720] (-) TimerEvent: {}
+[95.485509] (-) TimerEvent: {}
+[95.586283] (-) TimerEvent: {}
+[95.687121] (-) TimerEvent: {}
+[95.788017] (-) TimerEvent: {}
+[95.888859] (-) TimerEvent: {}
+[95.989686] (-) TimerEvent: {}
+[96.090494] (-) TimerEvent: {}
+[96.191413] (-) TimerEvent: {}
+[96.292244] (-) TimerEvent: {}
+[96.393053] (-) TimerEvent: {}
+[96.493839] (-) TimerEvent: {}
+[96.594708] (-) TimerEvent: {}
+[96.695549] (-) TimerEvent: {}
+[96.751500] (pid_control) StdoutLine: {'line': b'[100%] Built target pid_control_node\n'}
+[96.795751] (-) TimerEvent: {}
+[96.800440] (pid_control) CommandEnded: {'returncode': 0}
+[96.803303] (pid_control) JobProgress: {'identifier': 'pid_control', 'progress': 'install'}
+[96.804595] (pid_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/pid_control'], 'cwd': '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/pid_control', 'env': OrderedDict([('USER', 'sunrise'), ('SSH_CLIENT', '10.249.66.214 56807 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sunrise/bluesea2_ws/install/base/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/sunrise'), ('OLDPWD', '/home/sunrise/lidar_locate_ws/lidar_locate_ws'), ('SSH_TTY', '/dev/pts/5'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/sunrise/cartographer_ws/install:/home/sunrise/bluesea2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunrise'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '8'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:13.0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/sunrise/cartographer_ws/install/my_cartographer_config:/home/sunrise/bluesea2_ws/install/bluesea2:/home/sunrise/bluesea2_ws/install/base:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/pid_control'), ('SSH_CONNECTION', '10.249.66.214 56807 10.249.83.222 22'), ('PYTHONPATH', '/home/sunrise/bluesea2_ws/install/base/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/sunrise/cartographer_ws/install/my_cartographer_config:/home/sunrise/bluesea2_ws/install/bluesea2:/home/sunrise/bluesea2_ws/install/base:/opt/ros/humble')]), 'shell': False}
+[96.840726] (pid_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[96.841780] (pid_control) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/pid_control/lib/pid_control/pid_control_node\n'}
+[96.881692] (pid_control) StdoutLine: {'line': b'-- Set runtime path of "/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/pid_control/lib/pid_control/pid_control_node" to ""\n'}
+[96.882649] (pid_control) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/pid_control/share/pid_control/config\n'}
+[96.883360] (pid_control) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/pid_control/share/pid_control/config/pid_control_params.yaml\n'}
+[96.883954] (pid_control) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/pid_control/share/pid_control/launch\n'}
+[96.884565] (pid_control) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/pid_control/share/pid_control/launch/pid_control_launch.py\n'}
+[96.885035] (pid_control) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/pid_control/include\n'}
+[96.885557] (pid_control) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/pid_control/include/pid_control\n'}
+[96.886002] (pid_control) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/pid_control/include/pid_control/pid_control.hpp\n'}
+[96.886520] (pid_control) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/pid_control/share/ament_index/resource_index/package_run_dependencies/pid_control\n'}
+[96.887226] (pid_control) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/pid_control/share/ament_index/resource_index/parent_prefix_path/pid_control\n'}
+[96.887807] (pid_control) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/pid_control/share/pid_control/environment/ament_prefix_path.sh\n'}
+[96.888283] (pid_control) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/pid_control/share/pid_control/environment/ament_prefix_path.dsv\n'}
+[96.888814] (pid_control) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/pid_control/share/pid_control/environment/path.sh\n'}
+[96.889421] (pid_control) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/pid_control/share/pid_control/environment/path.dsv\n'}
+[96.889968] (pid_control) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/pid_control/share/pid_control/local_setup.bash\n'}
+[96.890541] (pid_control) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/pid_control/share/pid_control/local_setup.sh\n'}
+[96.891120] (pid_control) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/pid_control/share/pid_control/local_setup.zsh\n'}
+[96.891760] (pid_control) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/pid_control/share/pid_control/local_setup.dsv\n'}
+[96.892361] (pid_control) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/pid_control/share/pid_control/package.dsv\n'}
+[96.892979] (pid_control) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/pid_control/share/ament_index/resource_index/packages/pid_control\n'}
+[96.893697] (pid_control) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/pid_control/share/pid_control/cmake/pid_controlConfig.cmake\n'}
+[96.894247] (pid_control) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/pid_control/share/pid_control/cmake/pid_controlConfig-version.cmake\n'}
+[96.894830] (pid_control) StdoutLine: {'line': b'-- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/pid_control/share/pid_control/package.xml\n'}
+[96.895834] (-) TimerEvent: {}
+[96.902545] (pid_control) CommandEnded: {'returncode': 0}
+[96.985249] (pid_control) JobEnded: {'identifier': 'pid_control', 'rc': 0}
+[96.990990] (my_launch) JobStarted: {'identifier': 'my_launch'}
+[96.996128] (-) TimerEvent: {}
+[97.096910] (-) TimerEvent: {}
+[97.197750] (-) TimerEvent: {}
+[97.298508] (-) TimerEvent: {}
+[97.399267] (-) TimerEvent: {}
+[97.500090] (-) TimerEvent: {}
+[97.600868] (-) TimerEvent: {}
+[97.701633] (-) TimerEvent: {}
+[97.802435] (-) TimerEvent: {}
+[97.903233] (-) TimerEvent: {}
+[98.004033] (-) TimerEvent: {}
+[98.104810] (-) TimerEvent: {}
+[98.205577] (-) TimerEvent: {}
+[98.306418] (-) TimerEvent: {}
+[98.407864] (-) TimerEvent: {}
+[98.508849] (-) TimerEvent: {}
+[98.609692] (-) TimerEvent: {}
+[98.710482] (-) TimerEvent: {}
+[98.811252] (-) TimerEvent: {}
+[98.912059] (-) TimerEvent: {}
+[99.012848] (-) TimerEvent: {}
+[99.113658] (-) TimerEvent: {}
+[99.214431] (-) TimerEvent: {}
+[99.315198] (-) TimerEvent: {}
+[99.415956] (-) TimerEvent: {}
+[99.516793] (-) TimerEvent: {}
+[99.617575] (-) TimerEvent: {}
+[99.718441] (-) TimerEvent: {}
+[99.819413] (-) TimerEvent: {}
+[99.920305] (-) TimerEvent: {}
+[100.021227] (-) TimerEvent: {}
+[100.122028] (-) TimerEvent: {}
+[100.222841] (-) TimerEvent: {}
+[100.323719] (-) TimerEvent: {}
+[100.424516] (-) TimerEvent: {}
+[100.525332] (-) TimerEvent: {}
+[100.626166] (-) TimerEvent: {}
+[100.727019] (-) TimerEvent: {}
+[100.856518] (-) TimerEvent: {}
+[100.957489] (-) TimerEvent: {}
+[101.058374] (-) TimerEvent: {}
+[101.159265] (-) TimerEvent: {}
+[101.225093] (my_launch) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/my_launch', 'build', '--build-base', '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/my_launch/build', 'install', '--record', '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/my_launch/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/my_launch', 'env': {'USER': 'sunrise', 'SSH_CLIENT': '10.249.66.214 56807 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/sunrise/bluesea2_ws/install/base/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib:', 'MOTD_SHOWN': 'pam', 'HOME': '/home/sunrise', 'OLDPWD': '/home/sunrise/lidar_locate_ws/lidar_locate_ws', 'SSH_TTY': '/dev/pts/5', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/sunrise/cartographer_ws/install:/home/sunrise/bluesea2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'sunrise', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '8', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:13.0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu:/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/pid_control:/home/sunrise/cartographer_ws/install/my_cartographer_config:/home/sunrise/bluesea2_ws/install/bluesea2:/home/sunrise/bluesea2_ws/install/base:/opt/ros/humble', 'SHELL': '/bin/bash', 'PWD': '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/my_launch', 'SSH_CONNECTION': '10.249.66.214 56807 10.249.83.222 22', 'PYTHONPATH': '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/my_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/my_launch/lib/python3.10/site-packages:/home/sunrise/bluesea2_ws/install/base/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu:/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/pid_control:/home/sunrise/cartographer_ws/install/my_cartographer_config:/home/sunrise/bluesea2_ws/install/bluesea2:/home/sunrise/bluesea2_ws/install/base'}, 'shell': False}
+[101.259426] (-) TimerEvent: {}
+[101.360218] (-) TimerEvent: {}
+[101.460993] (-) TimerEvent: {}
+[101.561759] (-) TimerEvent: {}
+[101.662538] (-) TimerEvent: {}
+[101.763279] (-) TimerEvent: {}
+[101.864046] (-) TimerEvent: {}
+[101.964789] (-) TimerEvent: {}
+[102.065536] (-) TimerEvent: {}
+[102.166300] (-) TimerEvent: {}
+[102.267121] (-) TimerEvent: {}
+[102.367911] (-) TimerEvent: {}
+[102.468744] (-) TimerEvent: {}
+[102.569600] (-) TimerEvent: {}
+[102.670424] (-) TimerEvent: {}
+[102.771208] (-) TimerEvent: {}
+[102.781406] (my_launch) StdoutLine: {'line': b'running egg_info\n'}
+[102.871396] (-) TimerEvent: {}
+[102.878312] (my_launch) StdoutLine: {'line': b'creating ../build/my_launch/my_launch.egg-info\n'}
+[102.879162] (my_launch) StdoutLine: {'line': b'writing ../build/my_launch/my_launch.egg-info/PKG-INFO\n'}
+[102.882907] (my_launch) StdoutLine: {'line': b'writing dependency_links to ../build/my_launch/my_launch.egg-info/dependency_links.txt\n'}
+[102.884845] (my_launch) StdoutLine: {'line': b'writing requirements to ../build/my_launch/my_launch.egg-info/requires.txt\n'}
+[102.885641] (my_launch) StdoutLine: {'line': b'writing top-level names to ../build/my_launch/my_launch.egg-info/top_level.txt\n'}
+[102.886330] (my_launch) StdoutLine: {'line': b"writing manifest file '../build/my_launch/my_launch.egg-info/SOURCES.txt'\n"}
+[102.971593] (-) TimerEvent: {}
+[103.072542] (-) TimerEvent: {}
+[103.088615] (my_launch) StdoutLine: {'line': b"reading manifest file '../build/my_launch/my_launch.egg-info/SOURCES.txt'\n"}
+[103.095692] (my_launch) StdoutLine: {'line': b"writing manifest file '../build/my_launch/my_launch.egg-info/SOURCES.txt'\n"}
+[103.096525] (my_launch) StdoutLine: {'line': b'running build\n'}
+[103.097268] (my_launch) StdoutLine: {'line': b'running build_py\n'}
+[103.097948] (my_launch) StdoutLine: {'line': b'creating /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/my_launch/build/lib/my_launch\n'}
+[103.099133] (my_launch) StdoutLine: {'line': b'copying my_launch/__init__.py -> /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/my_launch/build/lib/my_launch\n'}
+[103.100780] (my_launch) StdoutLine: {'line': b'running install\n'}
+[103.132667] (my_launch) StdoutLine: {'line': b'running install_lib\n'}
+[103.172728] (-) TimerEvent: {}
+[103.229708] (my_launch) StdoutLine: {'line': b'creating /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/my_launch/lib/python3.10/site-packages/my_launch\n'}
+[103.230539] (my_launch) StdoutLine: {'line': b'copying /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/my_launch/build/lib/my_launch/__init__.py -> /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/my_launch/lib/python3.10/site-packages/my_launch\n'}
+[103.233576] (my_launch) StdoutLine: {'line': b'byte-compiling /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/my_launch/lib/python3.10/site-packages/my_launch/__init__.py to __init__.cpython-310.pyc\n'}
+[103.234831] (my_launch) StdoutLine: {'line': b'running install_data\n'}
+[103.236016] (my_launch) StdoutLine: {'line': b'creating /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/my_launch/share/ament_index/resource_index/packages\n'}
+[103.237075] (my_launch) StdoutLine: {'line': b'copying resource/my_launch -> /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/my_launch/share/ament_index/resource_index/packages\n'}
+[103.238227] (my_launch) StdoutLine: {'line': b'copying package.xml -> /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/my_launch/share/my_launch\n'}
+[103.239337] (my_launch) StdoutLine: {'line': b'creating /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/my_launch/share/my_launch/launch\n'}
+[103.240021] (my_launch) StdoutLine: {'line': b'copying launch/bringup.launch.py -> /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/my_launch/share/my_launch/launch\n'}
+[103.240732] (my_launch) StdoutLine: {'line': b'running install_egg_info\n'}
+[103.272898] (-) TimerEvent: {}
+[103.345195] (my_launch) StdoutLine: {'line': b'Copying ../build/my_launch/my_launch.egg-info to /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/my_launch/lib/python3.10/site-packages/my_launch-0.0.0-py3.10.egg-info\n'}
+[103.349535] (my_launch) StdoutLine: {'line': b'running install_scripts\n'}
+[103.373162] (-) TimerEvent: {}
+[103.473956] (-) TimerEvent: {}
+[103.553811] (my_launch) StdoutLine: {'line': b"writing list of installed files to '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/my_launch/install.log'\n"}
+[103.574147] (-) TimerEvent: {}
+[103.674978] (-) TimerEvent: {}
+[103.761007] (my_launch) CommandEnded: {'returncode': 0}
+[103.775178] (-) TimerEvent: {}
+[103.801286] (my_launch) JobEnded: {'identifier': 'my_launch', 'rc': 0}
+[103.804629] (-) EventReactorShutdown: {}

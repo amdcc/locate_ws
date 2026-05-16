@@ -1,0 +1,76 @@
+[0.079s] Invoking command in '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/uart_to_mcu -DCMAKE_INSTALL_PREFIX=/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu
+[0.681s] -- The C compiler identification is GNU 11.2.0
+[1.269s] -- The CXX compiler identification is GNU 11.2.0
+[1.314s] -- Detecting C compiler ABI info
+[1.716s] -- Detecting C compiler ABI info - done
+[1.763s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.764s] -- Detecting C compile features
+[1.766s] -- Detecting C compile features - done
+[1.782s] -- Detecting CXX compiler ABI info
+[2.219s] -- Detecting CXX compiler ABI info - done
+[2.268s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.270s] -- Detecting CXX compile features
+[2.273s] -- Detecting CXX compile features - done
+[2.288s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.877s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[5.572s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[5.825s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[5.856s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[5.912s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[5.997s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.106s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.396s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[6.414s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[6.862s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[6.992s] -- Found FastRTPS: /opt/ros/humble/include  
+[7.179s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.231s] -- Looking for pthread.h
+[7.672s] -- Looking for pthread.h - found
+[7.673s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[8.044s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[8.049s] -- Found Threads: TRUE  
+[8.417s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[8.965s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[8.966s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/uart_to_mcu/include>
+[8.966s] -- Configured cppcheck exclude dirs and/or files: 
+[8.970s] -- Added test 'flake8' to check Python code syntax and style conventions
+[8.974s] -- Added test 'lint_cmake' to check CMake code style
+[8.977s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[8.983s] -- Added test 'uncrustify' to check C / C++ code style
+[8.984s] -- Configured uncrustify additional arguments: 
+[8.986s] -- Added test 'xmllint' to check XML markup files
+[8.995s] -- Configuring done
+[9.041s] -- Generating done
+[9.063s] -- Build files have been written to: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu
+[9.139s] Invoked command in '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/uart_to_mcu -DCMAKE_INSTALL_PREFIX=/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu
+[9.147s] Invoking command in '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu -- -j8 -l8
+[9.367s] [ 50%] [32mBuilding CXX object CMakeFiles/uart_to_mcu_node.dir/src/uart_to_mcu.cpp.o[0m
+[63.350s] [100%] [32m[1mLinking CXX executable uart_to_mcu_node[0m
+[66.507s] [100%] Built target uart_to_mcu_node
+[66.557s] Invoked command in '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu -- -j8 -l8
+[66.564s] Invoking command in '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu
+[66.598s] -- Install configuration: ""
+[66.599s] -- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/lib/uart_to_mcu/uart_to_mcu_node
+[66.622s] -- Set runtime path of "/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/lib/uart_to_mcu/uart_to_mcu_node" to ""
+[66.623s] -- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/include
+[66.623s] -- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/include/uart_to_mcu
+[66.624s] -- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/include/uart_to_mcu/uart_to_mcu.hpp
+[66.625s] -- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/include/uart_to_mcu.hpp
+[66.625s] -- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/uart_to_mcu/launch
+[66.626s] -- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/uart_to_mcu/launch/uart_to_mcu.launch.py
+[66.627s] -- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/ament_index/resource_index/package_run_dependencies/uart_to_mcu
+[66.627s] -- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/ament_index/resource_index/parent_prefix_path/uart_to_mcu
+[66.628s] -- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/uart_to_mcu/environment/ament_prefix_path.sh
+[66.629s] -- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/uart_to_mcu/environment/ament_prefix_path.dsv
+[66.630s] -- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/uart_to_mcu/environment/path.sh
+[66.631s] -- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/uart_to_mcu/environment/path.dsv
+[66.631s] -- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/uart_to_mcu/local_setup.bash
+[66.632s] -- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/uart_to_mcu/local_setup.sh
+[66.633s] -- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/uart_to_mcu/local_setup.zsh
+[66.633s] -- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/uart_to_mcu/local_setup.dsv
+[66.634s] -- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/uart_to_mcu/package.dsv
+[66.635s] -- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/ament_index/resource_index/packages/uart_to_mcu
+[66.635s] -- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/uart_to_mcu/cmake/uart_to_mcuConfig.cmake
+[66.636s] -- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/uart_to_mcu/cmake/uart_to_mcuConfig-version.cmake
+[66.637s] -- Installing: /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/install/uart_to_mcu/share/uart_to_mcu/package.xml
+[66.648s] Invoked command in '/home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sunrise/lidar_locate_ws/lidar_locate_ws/src/build/uart_to_mcu

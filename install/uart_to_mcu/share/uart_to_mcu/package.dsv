@@ -1,0 +1,8 @@
+source;share/uart_to_mcu/hook/cmake_prefix_path.ps1
+source;share/uart_to_mcu/hook/cmake_prefix_path.dsv
+source;share/uart_to_mcu/hook/cmake_prefix_path.sh
+source;share/uart_to_mcu/local_setup.bash
+source;share/uart_to_mcu/local_setup.dsv
+source;share/uart_to_mcu/local_setup.ps1
+source;share/uart_to_mcu/local_setup.sh
+source;share/uart_to_mcu/local_setup.zsh

@@ -1,0 +1,4 @@
+source;share/carto_description/local_setup.bash
+source;share/carto_description/local_setup.dsv
+source;share/carto_description/local_setup.sh
+source;share/carto_description/local_setup.zsh
